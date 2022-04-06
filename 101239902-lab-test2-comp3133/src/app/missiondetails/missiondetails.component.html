@@ -1,0 +1,31 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<h1>Space X - Mission Details</h1>
+
+<div class="body">
+    <img [src]="mission?.links?.mission_patch" />
+    <br>
+    <div class="info">
+        <h2>Name: {{mission?.mission_name}}</h2>
+        <p>Launch Year: {{mission?.launch_year}}</p>
+
+        <h2>Rocket</h2>
+        <p>Name: {{mission?.rocket?.rocket_name}}</p>
+        <p>Type: {{mission?.rocket?.rocket_type}}</p>
+
+        <h2>Launch Site</h2>
+        <p>Name: {{mission?.launch_site?.site_name_long}}</p>
+    </div>
+
+    <div class="details">
+        <h2>Launch Details</h2>
+        <p>{{mission?.details}}</p>
+    </div>
+</div>
+
+<div class="btn">
+    <button mat-raised-button (click)="home()">Back</button>
+</div>

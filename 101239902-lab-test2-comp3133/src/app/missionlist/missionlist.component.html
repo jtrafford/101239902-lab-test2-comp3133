@@ -1,0 +1,19 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+</head>
+
+<h1 class="title">Space X - Mission Launch List</h1>
+
+<div *ngFor="let mission of missions">
+    <div class="launch">
+        <img [src]="mission.links.mission_patch_small" />
+        <div class="details">
+            <h2>{{mission.mission_name}}</h2>
+            <p>{{mission.launch_year}}</p>
+            <p>{{mission.details}}</p>
+            <button mat-raised-button color="primary" (click)="select(mission)">Details</button>
+        </div>
+    </div>
+</div>
