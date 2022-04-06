@@ -5,6 +5,7 @@
 
 .title {
     margin: 50px;
+    font-size: 80px;
 }
 
 .launch {
@@ -12,6 +13,8 @@
     margin-bottom: 40px;
     width: 80%;
     height: 300px;
+    background-color: rgb(195, 195, 248);
+
 }
 
 .launch img {
